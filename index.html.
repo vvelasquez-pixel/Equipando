@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web - Datos con Propósito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Menú -->
+  <header class="hero">
+    <div class="container">
+      <h1>Datos <span>con propósito</span></h1>
+      <p class="subtitle">Formación ejecutiva de alto nivel</p>
+      
+      <div class="badges">
+        <div class="badge"><b>24 h</b> <span>de formación total</span></div>
+        <div class="badge"><b>Híbrida</b> <span>modalidad flexible</span></div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#presentacion">Presentación</a>
+        <a href="#sesiones">Sesiones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Presentación -->
+  <main class="container">
+    <section id="presentacion" class="card">
+      <span class="tag">Sesión 00 · Por qué nace este programa</span>
+      <h2>¿Puede haber <span>justicia</span> sin datos?</h2>
+      <p>Leer los problemas con rigor exige mirar el mundo con técnica y propósito.</p>
+      
+      <div class="comparativa">
+        <div class="box sin-programa">
+          <h3>Sin el programa</h3>
+          <p>Se lee el promedio y se cierra el informe sin profundizar.</p>
+        </div>
+        <div class="box con-programa">
+          <h3>Con el programa</h3>
+          <p>Se analiza la cifra considerando población, territorio y contexto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Para mayor información: correo@ejemplo.com</p>
+  </footer>
+
+</body>
+</html>
