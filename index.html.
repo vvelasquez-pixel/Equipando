@@ -3,52 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web - Datos con Propósito</title>
+  <title>Equipando | Perspectiva de Género</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Encabezado / Menú -->
+  <!-- Encabezado / Hero -->
   <header class="hero">
     <div class="container">
-      <h1>Datos <span>con propósito</span></h1>
-      <p class="subtitle">Formación ejecutiva de alto nivel</p>
-      
-      <div class="badges">
-        <div class="badge"><b>24 h</b> <span>de formación total</span></div>
-        <div class="badge"><b>Híbrida</b> <span>modalidad flexible</span></div>
+      <span class="badge-tag">Curso de Formación</span>
+      <h1>Equipando</h1>
+      <p class="hero-subtitle">La perspectiva de género como nuestro mayor capital</p>
+      <p class="hero-description">
+        Un espacio de aprendizaje transformador para sectores público, privado, organizaciones sociales y líderes comprometidos con reducir brechas y fomentar la equidad.
+      </p>
+
+      <!-- Métricas / Indicadores -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <b>11</b>
+          <span>Sesiones temáticas</span>
+        </div>
+        <div class="metric-card">
+          <b>4</b>
+          <span>Sectores objetivo</span>
+        </div>
+        <div class="metric-card">
+          <b>100%</b>
+          <span>Enfoque práctico</span>
+        </div>
       </div>
 
+      <!-- Navegación interna -->
       <nav class="nav-links">
         <a href="#presentacion">Presentación</a>
-        <a href="#sesiones">Sesiones</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#audiencia">A quién va dirigido</a>
+        <a href="#modulos">Programa académico</a>
+        <a href="#recursos">Recursos</a>
       </nav>
     </div>
   </header>
 
-  <!-- Sección de Presentación -->
   <main class="container">
+
+    <!-- Sección Presentación -->
     <section id="presentacion" class="card">
-      <span class="tag">Sesión 00 · Por qué nace este programa</span>
-      <h2>¿Puede haber <span>justicia</span> sin datos?</h2>
-      <p>Leer los problemas con rigor exige mirar el mundo con técnica y propósito.</p>
-      
-      <div class="comparativa">
-        <div class="box sin-programa">
+      <span class="tag">Propósito del Programa</span>
+      <h2>Transformación cultural e institucional con enfoque de género</h2>
+      <p>
+        El curso <strong>Equipando</strong> responde a la necesidad crítica de integrar la equidad de género, los derechos humanos y la interseccionalidad no solo como un deber ético, sino como el motor estratégico del desarrollo económico y la sostenibilidad organizacional.
+      </p>
+
+      <div class="comparative-grid">
+        <div class="box box-before">
           <h3>Sin el programa</h3>
-          <p>Se lee el promedio y se cierra el informe sin profundizar.</p>
+          <p>Las brechas de género, la división del trabajo de cuidado y los sesgos organizacionales permanecen invisibles en la toma de decisiones.</p>
         </div>
-        <div class="box con-programa">
+        <div class="box box-after">
           <h3>Con el programa</h3>
-          <p>Se analiza la cifra considerando población, territorio y contexto.</p>
+          <p>Líderes y equipos adquieren herramientas para incorporar el enfoque de género en políticas, servicios, contratación y comunicación.</p>
         </div>
       </div>
     </section>
+
+    <!-- Audiencia Objetivo -->
+    <section id="audiencia" class="card">
+      <span class="tag">Audiencia Objetivo</span>
+      <h2>¿A quién está dirigido?</h2>
+      <div class="audience-grid">
+        <div class="audience-item">
+          <h3>Sector Público</h3>
+          <p>Entidades e instituciones interesadas en incorporar la perspectiva de género en sus políticas públicas, proyectos y servicios.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Sector Privado</h3>
+          <p>Empresas de todos los tamaños que buscan mejorar su clima organizacional, cumplir normativas y reducir brechas de género.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Organizaciones Sociales</h3>
+          <p>Corporaciones, ONGs y fundaciones que deseen alinear sus prácticas con la equidad y los derechos humanos.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Líderes y Equipos Internos</h3>
+          <p>Directivos, áreas de Gestión Humana y personal colaborador en búsqueda de una transformación cultural interna.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulos / Sesiones del Curso -->
+    <section id="modulos" class="card">
+      <span class="tag">Estructura del Curso</span>
+      <h2>Listado de Módulos y Sesiones</h2>
+      <p>A continuación encontrarás la ruta de aprendizaje distribuida en 11 espacios de formación especializada:</p>
+
+      <div class="sessions-list">
+
+        <!-- Sesión 0 -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 0</span>
+            <span class="session-badge">Lanzamiento</span>
+          </div>
+          <h3>Derechos humanos: un enfoque del desarrollo económico</h3>
+          <p class="session-sub">La equidad de género como un DDHH</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 1 -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 1</span>
+            <span class="session-badge">Perspectiva</span>
+          </div>
+          <h3>Y ¿eso del género qué es y para qué?</h3>
+          <p class="session-sub">Perspectiva de género</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 2 -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 2</span>
+            <span class="session-badge">Diversidad</span>
+          </div>
+          <h3>¿Y eso de más qué? ¿Queers-Cuirs, intersexuales y personas trans?</h3>
+          <p class="session-sub">Relaciones no contradictorias entre el sexo y el género - Construcción social del sexo</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 3A -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 3A</span>
+            <span class="session-badge">Autonomía</span>
+          </div>
+          <h3>El cuerpo como espacio de decisión: elementos claves para el placer y la agencia</h3>
+          <p class="session-sub">Derechos sexuales y reproductivos</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 3B -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 3B</span>
+            <span class="session-badge">Cuidado</span>
+          </div>
+          <h3>"Eso no es nada": el cuidado como elemento central del desarrollo</h3>
+          <p class="session-sub">Economía del cuidado y la división sexual del trabajo</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 4 -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 4</span>
+            <span class="session-badge">Interseccionalidad</span>
+          </div>
+          <h3>¿Los pobres son pobres porque quieren?: reflexiones sobre las decisiones y el contexto</h3>
+          <p class="session-sub">Interseccionalidad y enfoque étnico territorial</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 5A -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 5A</span>
+            <span class="session-badge">Prevención</span>
+          </div>
+          <h3>Salirnos del rol: VBG y por prejuicios LGTBIQ+</h3>
+          <p class="session-sub">Violencias basadas en género y por prejuicio LGTBIQ+</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 5B -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 5B</span>
+            <span class="session-badge">Inclusión</span>
+          </div>
+          <h3>¿Los hombres cómo podemos aportar a la equidad y a la inclusión?</h3>
+          <p class="session-sub">Masculinidades</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 6 -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 6</span>
+            <span class="session-badge">Economía</span>
+          </div>
+          <h3>Más allá del homo economicus: la perspectiva de género para el desarrollo económico</h3>
+          <p class="session-sub">Economía feminista y el desarrollo económico desde una perspectiva de género</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 7A -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 7A</span>
+            <span class="session-badge">Comunicación</span>
+          </div>
+          <h3>Comunicación inclusiva I - La forma como comunico</h3>
+          <p class="session-sub">Comunicación interna y externa</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+        <!-- Sesión 7B -->
+        <article class="session-card">
+          <div class="session-header">
+            <span class="session-num">Sesión 7B</span>
+            <span class="session-badge">Gestión Org.</span>
+          </div>
+          <h3>Contratación inclusiva II - Para proveedores y servicios</h3>
+          <p class="session-sub">Administrativos y Gestión Humana</p>
+          <div class="session-actions">
+            <a href="#" class="btn-secondary">Guía de estudio</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sección Recursos y Diagnóstico -->
+    <section id="recursos" class="card highlight-card">
+      <span class="tag tag-light">Insumos y Formularios</span>
+      <h2>Línea Base y Material Complementario</h2>
+      <p>
+        Antes de iniciar el recorrido académico, completa el diagnóstico inicial de Línea Base para registrar el estado de tus indicadores organizacionales.
+      </p>
+      <div class="resource-links">
+        <a href="#" class="btn-primary">Diligenciar Formulario de Línea Base</a>
+        <a href="#" class="btn-outline">Descargar Bibliografía Complementaria</a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p>Para mayor información: correo@ejemplo.com</p>
+    <div class="container footer-content">
+      <p><strong>Formación Equipando</strong> · La perspectiva de género como nuestro mayor capital</p>
+      <p>Diseñado con el apoyo metodológico institucional de la Fundación WWB Colombia</p>
+    </div>
   </footer>
 
 </body>
