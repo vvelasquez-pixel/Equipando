@@ -1,119 +1,310 @@
-/* Configuración básica y tipografía */
+/* Paleta inspirada en la Fundación WWB Colombia */
+:root {
+  --primary-color: #5C1D63;      /* Púrpura principal */
+  --primary-dark: #3F1044;       /* Púrpura oscuro / Hero background */
+  --accent-color: #D81B60;        /* Magenta / Destacados */
+  --accent-light: #FCE4EC;       /* Rosa suave para cajas */
+  --bg-color: #F8F9FA;           /* Fondo gris claro limpio */
+  --card-bg: #FFFFFF;            /* Tarjetas blancas */
+  --text-color: #2D3748;          /* Texto oscuro fácil de leer */
+  --text-muted: #6C757D;         /* Texto secundario */
+  --border-color: #E2E8F0;       /* Líneas divisoras suave */
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f172a;
-  color: #f8fafc;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
-/* Encabezado */
+/* Encabezado Principal */
 .hero {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  color: #FFFFFF;
+  padding: 60px 20px 40px;
   text-align: center;
-  border-bottom: 1px solid #334155;
+}
+
+.badge-tag {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin: 15px 0 5px;
+  font-weight: 800;
 }
 
-h1 span, h2 span {
-  color: #38bdf8; /* Color azul claro destacado */
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #E9D5DA;
+  margin-bottom: 15px;
+  font-weight: 300;
 }
 
-.subtitle {
-  color: #94a3b8;
-  font-size: 1.2rem;
+.hero-description {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-/* Indicadores de horas/modalidad */
-.badges {
+/* Métricas */
+.metrics-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 25px 0;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
-.badge {
-  background-color: #1e293b;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #334155;
+.metric-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+  min-width: 130px;
 }
 
-.badge b {
+.metric-card b {
   display: block;
-  font-size: 1.3rem;
-  color: #38bdf8;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+.metric-card span {
+  font-size: 0.85rem;
+  color: #E9D5DA;
 }
 
 /* Navegación */
 .nav-links {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .nav-links a {
-  color: #e2e8f0;
+  color: #FFFFFF;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 12px;
   font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #FFB74D;
 }
 
-/* Contenido Principal */
+/* Layout General */
 .container {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .card {
-  background-color: #1e293b;
-  padding: 30px;
+  background: var(--card-bg);
   border-radius: 12px;
-  margin-top: 30px;
-  border: 1px solid #334155;
+  padding: 35px;
+  margin: 35px 0;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .tag {
-  color: #38bdf8;
+  color: var(--accent-color);
   font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
-/* Comparativa tipo cajas */
-.comparativa {
+h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+
+/* Comparativa */
+.comparative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .comparative-grid, .audience-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.box {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box-before {
+  background-color: #FFF5F5;
+  border-left: 4px solid #E53E3E;
+}
+
+.box-after {
+  background-color: #F0FFF4;
+  border-left: 4px solid #38A169;
+}
+
+/* Grid de Audiencia */
+.audience-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 20px;
 }
 
-.box {
-  padding: 15px;
+.audience-item {
+  background: var(--bg-color);
+  padding: 20px;
   border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
 }
 
-.sin-programa {
-  background-color: #291e29;
-  border-left: 4px solid #f43f5e;
+.audience-item h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.1rem;
 }
 
-.con-programa {
-  background-color: #1e2e29;
-  border-left: 4px solid #10b981;
+/* Lista de Sesiones / Módulos */
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
 }
 
+.session-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.session-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.session-num {
+  font-weight: 800;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+.session-badge {
+  background-color: var(--accent-light);
+  color: var(--primary-color);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.session-card h3 {
+  margin: 5px 0;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.session-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+/* Tarjeta de Recursos / Destacada */
+.highlight-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: #FFFFFF;
+}
+
+.highlight-card h2, .highlight-card p {
+  color: #FFFFFF;
+}
+
+.tag-light {
+  color: #FFB74D;
+}
+
+.resource-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-outline {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Pie de Página */
 footer {
   text-align: center;
-  padding: 30px;
-  color: #64748b;
+  padding: 40px 20px;
+  color: var(--text-muted);
   font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
 }
